@@ -46,6 +46,8 @@ for x in range(settings.GRID_SIZE):
         c.cell_btn_obj.grid(
             column =x, row=y
         )
+
+Cell.randomize_mines()
 #run the window
 root.mainloop() #this is needed to keep the window running
 

@@ -47,6 +47,9 @@ for x in range(settings.GRID_SIZE):
             column =x, row=y
         )
 
+Cell.create_cell_count_label(left_frame)
+Cell.cell_count_label_obj.place(x=0, y=0)
+
 Cell.randomize_mines()
 #run the window
 root.mainloop() #this is needed to keep the window running
